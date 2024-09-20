@@ -1,0 +1,30 @@
+@import url(https://fonts.googleapis.com/css?family=Press+Start+2P);
+body {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 16px;
+    font-weight: bold;
+    color: #9c5bc4;
+    line-height: 50px;
+    text-align: center;
+  }
+  img{
+    width: 50%;
+    padding-bottom: 0%;
+    margin: 0 0;
+  }
+
+  /* 
+  animation code from Frank van Wijk on stackoverflow
+  https://stackoverflow.com/questions/10123700/how-to-make-a-picture-rotate-continuously
+  */
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to { 
+      transform: rotate(360deg);
+    }
+  }
+  img.star {
+    animation: rotate 2s infinite linear;
+}
